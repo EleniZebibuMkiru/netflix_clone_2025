@@ -1,0 +1,62 @@
+/* Sticky header container */
+.header_outer_container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: transparent; /* change to dark on scroll if needed */
+    color: #fff;
+    transition: all 0.5s ease-in;
+    z-index: 1000;
+}
+
+/* Inner header wrapper */
+.header_container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left section (logo/menu) */
+.header_left ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* space between menu items */
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+/* Right section icons */
+.headSer_right {
+    display: flex;
+    align-items: center;
+}
+
+.headSer_right ul {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* space between icons */
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.headSer_right ul li {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.headSer_right ul li:hover {
+    transform: scale(1.1);
+}
+
+/* Optional: change header background on scroll */
+.nav_black {
+    background-color: rgb(20, 20, 20);
+    transition: background-color 0.3s ease-in;
+}
